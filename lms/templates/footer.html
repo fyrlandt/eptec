@@ -1,0 +1,47 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<%namespace name='static' file='static_content.html'/>
+<%!
+  from datetime import date
+%>
+<div class="wrapper wrapper-footer">
+ <footer id="footer-openedx">
+    <div class="colophon" style="width: 40%;">
+      <nav class="nav-colophon">
+        <ol>
+			<li class="footer-links"><a href="https://cloudswyft.com" target="_blank" data-mscc-ic="false">Privacy & Cookies</a></li>
+			<li class="footer-links"><a href="${reverse('tos')}" target="_blank" data-mscc-ic="false">Terms of Service</a></li>
+			<li class="footer-links"><a href="https://cloudswyft.com" target="_blank" data-mscc-ic="false">Trademarks</a></li>
+			<li class="footer-links"><a href="/faq" target="_blank">Support</a></li>
+			<li class="co-footer-label">
+				&copy; ${_(' {year} CloudSwyft an Official Microsoft Open edX Partner').format( year=date.today().year)}
+			</li>
+        </ol>      
+     </nav>
+   </div>
+   <div class="references" style="width:auto; margin-top: 2%; margin-right: 3%" >
+       <a href="https://cloudswyft.com" target="_blank"><img src="/static/ep-tec/images/azure_logo.png"alt="CloudSwyft Apollo Academy" height="40"></a>
+   </div>
+   <div class="references" style="margin-top: 4.5em; margin-right:-16%; width: 175px !important;" >
+       <a href="https://microsoft.com" target="_blank"><img class="iconDetails" src="/static/ep-tec/images/ms-logo.png"alt="Microsoft" height="18"></a>
+       <a href="https://open.edx.org/" target="_blank"><img class="iconDetails" src="/static/ep-tec/images/edx-logo.png" alt="Powered by Open edX" height="18" style="margin-left:1em;"></a>
+   </div>
+  </footer>
+</div>
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif

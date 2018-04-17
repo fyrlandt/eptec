@@ -50,6 +50,13 @@ html {
     font-weight: bold;
 }
 
+.banner-btn {
+    position: relative;
+    top: 25%;
+    padding-left: 8%;
+    width: 427px;
+}
+
 //--------------------------------
 // Registration/Signin link on the header
 //--------------------------------
@@ -356,7 +363,7 @@ button#orders-tab, button#accounts-tab {
 //-----------------
 .wrapper-footer {
     box-shadow: none !important;
-    background-image: url("/static/ep-tec/images/footer.png");
+    background-image: url("/static/epofficial/images/footer.png");
     background-size: cover;
     
     footer {

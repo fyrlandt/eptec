@@ -53,9 +53,15 @@ html {
 .banner-btn {
     position: relative;
     top: 25%;
-    padding-left: 8%;
+    @media screen and (max-width: 1600px) {
+        padding-left: 4.5%;
+    }
+    @media screen and (min-width: 1920px) {
+        padding-left: 8%;
+    }
     width: 427px;
 }
+
 
 //--------------------------------
 // Registration/Signin link on the header

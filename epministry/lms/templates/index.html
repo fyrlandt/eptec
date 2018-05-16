@@ -10,7 +10,8 @@ from openedx.core.djangolib.markup import HTML, Text
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
-      <header>
+	  <img src="/static/epministry/images/REX_BG_1.png" style="width: 100%">
+      <!--<header>
         <div class="outer-wrapper">
           <div class="title">
             <div class="heading-group">
@@ -33,11 +34,12 @@ from openedx.core.djangolib.markup import HTML, Text
             </a>
           % endif
         </div>
-      </header>
+      </header>-->
+
 	  <div style="background-image: url(/static/epministry/images/banner_info.png); height: 140px;">
-		<a href="/courses"><img class="banner-btn" src="/static/epministry/images/banner_btn_1.png"></a>
-        <a href="https://www.ep-asia.com"><img class="banner-btn" src="/static/epministry/images/banner_btn_2.png"></a>
-		<a href="https://www.cloudswyft.com"><img class="banner-btn" src="/static/epministry/images/banner_btn_3.png"></a>
+		<a class="col-md-4" style="text-align:center; top: 10%;" href="/courses"><img src="/static/epministry/images/banner_btn_1.png"></a>
+        <a class="col-md-4" style="text-align:center; top: 10%;" href="https://www.ep-asia.com"><img src="/static/epministry/images/banner_btn_2.png"></a>
+		<a class="col-md-4" style="text-align:center; top: 10%;" href="https://www.cloudswyft.com"><img src="/static/epministry/images/banner_btn_3.png"></a>
       </div>
       <%include file="${courses_list}" />
 

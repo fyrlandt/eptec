@@ -17,7 +17,7 @@ html {
          
 }
 .home > header {
-    height: 375;
+    height: 635px;
     background-position: center top;
 
     .outer-wrapper {
@@ -52,14 +52,13 @@ html {
 
 .banner-btn {
     position: relative;
-    top: 25%;
+    top: 7%;
     @media screen and (max-width: 1600px) {
-        padding-left: 4.5%;
+        padding-left: 19%;
     }
     @media screen and (min-width: 1920px) {
-        padding-left: 8%;
+        padding-left: 19%;
     }
-    width: 427px;
 }
 
 

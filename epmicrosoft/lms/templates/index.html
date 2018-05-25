@@ -18,7 +18,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 ${homepage_overlay_html | n, decode.utf8}
               % else:
                   ## Translators: 'Open edX' is a registered trademark, please keep this untranslated. See http://open.edx.org for more information.
-                  <h1>${_("Welcome to CloudSwyft Apollo Academy!")}</h1>
+                  <h1>${_("Welcome to EP Microsoft Academy!")}</h1>
                   ## Translators: 'Open edX' is a registered trademark, please keep this untranslated. See http://open.edx.org for more information.
                   <h2>${_("Learn Modern 21st Century Technology Skills Today!")}</h2>
               % endif
@@ -47,11 +47,6 @@ from openedx.core.djangolib.markup import HTML, Text
           % endif
         </div>
 
-      <div style="background-image: url(/static/epmicrosoft/images/banner_info.png); height: 140px;">
-		<a class="col-md-4" style="text-align:center; top: 10%;" href="https://epacademy-education.cloudswyft.com/"><img src="/static/epofficial/images/banner_btn_1.png"></a>
-        <a class="col-md-4" style="text-align:center; top: 10%;" href="https://epacademy-business.cloudswyft.com/"><img src="/static/epofficial/images/banner_btn_2.png"></a>
-		<a class="col-md-4" style="text-align:center; top: 10%;" href="https://epacademy-ministry.cloudswyft.com/"><img src="/static/epofficial/images/banner_btn_3.png"></a>
-      </div>
       </header>
       <%include file="${courses_list}" />
 

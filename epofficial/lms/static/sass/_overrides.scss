@@ -61,6 +61,34 @@ html {
     }
 }
 
+.sign-in-btn{
+    background-color: #d9534f !important;
+    border-color: #d43f3a !important;
+}
+
+.sign-in-btn:hover{
+    background-color: #c9302c !important;
+    border-color: #ac2925 !important;
+}
+
+.search-btn{
+    float: right;
+    background-color: transparent;
+    border-width: 0px;
+    background-image: none;
+    color: #d9534f;
+    border: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 4px 0px 4px 4px;
+}
+
+.search-btn:hover{
+    background-color: transparent !important;
+    border-width: 0px !important;
+    background-image: none !important;
+}
+
 
 //--------------------------------
 // Registration/Signin link on the header

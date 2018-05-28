@@ -62,6 +62,16 @@ html {
     width: 427px;
 }
 
+.sign-in-btn{
+    background-color: #d9534f !important;
+    border-color: #d43f3a !important;
+}
+
+.sign-in-btn:hover{
+    background-color: #c9302c !important;
+    border-color: #ac2925 !important;
+}
+
 
 //--------------------------------
 // Registration/Signin link on the header

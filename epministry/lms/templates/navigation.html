@@ -60,7 +60,7 @@ site_status_msg = get_site_status_msg(course_id)
             logo_url = branding_api.get_logo_url(is_secure)
             logo_size = ''
         %>
-            <img class="${logo_size}" src="${logo_url}" width="108" height="23" vspace="15" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
+            <img style="margin-top:7px;" class="${logo_size}" src="${logo_url}" width="108" height="33" vspace="15" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
         </%block>
       </a>
     </h1>
@@ -149,9 +149,9 @@ site_status_msg = get_site_status_msg(course_id)
         </%block>
       </ol>
 	  
-	  <ol class="left list-inline nav-global" style="transform: translate(50%, 0%);">
+	  <ol class="left list-inline nav-global" style="transform: translate(50%, 0%); margin-top: 0px;">
               <div class="course-search">
-                <form method="get" action="/courses">
+                <form method="get" action="/courses" style="padding-left: 137px;">
                   <label><span class="sr">${_("Search for a course")}</span>
                     <input style="font:300 1rem/1.6rem Arial;" class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
                   </label>

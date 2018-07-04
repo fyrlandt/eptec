@@ -51,7 +51,7 @@ site_status_msg = get_site_status_msg(course_id)
     <header id="global-navigation" class="header-global ${"slim" if course else ""}" >
     <nav class="nav-wrapper wrapper-header" aria-label="${_('Global')}">
     <h1 class="logo">
-      <a href="${marketing_link('ROOT')}">
+      <a>
         <%block name="navigation_logo">
         <%
         logo_url = get_enterprise_customer_logo_url(request)
@@ -171,7 +171,7 @@ site_status_msg = get_site_status_msg(course_id)
 			  </li>
 			% else:
 			  <li class="item nav-global-04">
-				<a class="btn-neutral btn-register" style="padding:10px 20px !important; font-family: Arial;" href="/register${login_query()}">${_("Register Now")}</a>
+				<a class="btn-neutral btn-register" style="padding:10px 20px !important; font-family: Arial;" href="/register${login_query()}">${_("Join Class")}</a>
 			  </li>
 			% endif
 		% endif
